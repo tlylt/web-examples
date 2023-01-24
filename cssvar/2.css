@@ -1,0 +1,12 @@
+:root {
+  --bg-color-2: salmon;
+  --bg-color-common: lightblue;
+}
+
+.targetB {
+  background-color: var(--bg-color-1);
+}
+
+.targetD {
+  background-color: var(--bg-color-common);
+}

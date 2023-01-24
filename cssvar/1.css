@@ -1,0 +1,19 @@
+:root {
+  --bg-color-common: beige;
+}
+
+.targetA {
+  background-color: var(--bg-color-1);
+}
+
+.targetC {
+  background-color: var(--bg-color-2);
+}
+
+.targetD {
+  background-color: var(--bg-color-common);
+}
+
+:root {
+  --bg-color-1: yellow; /* Can be used first and defined later in the file */
+}

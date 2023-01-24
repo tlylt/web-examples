@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Var example</title>
+    <link rel="stylesheet" href="1.css" />
+    <link rel="stylesheet" href="2.css" />
+  </head>
+  <body>
+    <h1>CSS Var example</h1>
+    <div>
+      Variables:
+      <ul>
+        <li>
+          bg-color-1: <span style="background-color: yellow">yellow</span>
+        </li>
+        <li>
+          bg-color-2: <span style="background-color: salmon">salmon</span>
+        </li>
+        <li>
+          bg-color-common:
+          <span style="background-color: beige">beige first</span>
+          <span style="background-color: lightblue">lightblue second</span>
+        </li>
+      </ul>
+    </div>
+    <div class="targetA">
+      Target A - bg-color-1 - use the variable defined in the same stylesheet
+    </div>
+    <div class="targetB">
+      Target B - bg-color-1 - use the variable defined in the other stylesheet
+      that is loaded first
+    </div>
+    <div class="targetC">
+      Target C - bg-color-2 - use the variable defined in the other stylesheet
+      that is loaded later
+    </div>
+    <div class="targetD">
+      Target D - bg-color-common - use the variable defined in both stylesheets
+    </div>
+    <script></script>
+  </body>
+</html>
