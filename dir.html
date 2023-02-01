@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>dir example</title>
+  </head>
+  <body>
+    <h1>dir example</h1>
+    <p id="target">This is my target</p>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+      const target = document.getElementById('target');
+      const before = document.getElementById('before');
+      const after = document.getElementById('after');
+      before.textContent = `The original dir is: ${target.dir}`;
+      target.dir = 'rtl'; // change the text direction on a paragraph identified as "target"
+      console.log(target.dir); // "rtl"
+      after.textContent = `The updated dir is: ${target.dir}`; // "The dir is: rtl"
+    </script>
+  </body>
+</html>
