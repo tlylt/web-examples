@@ -1,0 +1,14 @@
+/* invalid rule, does nothing*/
+:not(.foo, :invalid-pseudo-class) {
+  color: red;
+}
+
+/* selects all non .foo p elements*/
+p:is(:not(.foo), :not(:invalid-pseudo-class)) {
+  color: green;
+}
+
+/* selects all non .foo elements, including html and body */
+:is(:not(.foo), :not(:invalid-pseudo-class)) {
+  font-size: large;
+}
