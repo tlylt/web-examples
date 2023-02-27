@@ -1,0 +1,12 @@
+/* Select all paragraph elements that do not have a foo or a bar or both foo and bar in their class */
+p:not(.foo, .bar) {
+  color: red;
+  border-bottom: dotted thin currentcolor;
+  font-style: italic;
+}
+
+p:not(.foo):not(.bar) {
+  color: green;
+  border-top: dotted thin currentcolor;
+  font-weight: bold;
+}

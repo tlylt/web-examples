@@ -1,0 +1,35 @@
+/* Select all paragraph elements that do not have a foo or a bar or both foo and bar in their class */
+/* e.g. NONE of the following will be selected: */
+/* <p class="foo"> */
+/* <p class="bar"> */
+/* <p class="foo bar"> */
+/* e.g. ALL of the following will be selected: */
+/* <p class=""> */
+p:not(.foo, .bar) {
+  color: red;
+  border-bottom: dotted thin currentcolor;
+  font-style: italic;
+}
+
+/* Select all paragraph elements that either do not have a foo or a bar in their class */
+/* e.g. NONE of the following will be selected: */
+/* <p class="foo bar"> */
+/* e.g. ALL of the following will be selected: */
+/* <p class=""> */
+/* <p class="foo"> because it is not .bar */
+/* <p class="bar"> because it is not .foo */
+p:is(:not(.foo), :not(.bar)) {
+  text-decoration: underline;
+}
+
+/* Select all paragraph elements that do not have a foo or a bar or both foo and bar in their class */
+/* e.g. NONE of the following will be selected: */
+/* <p class="foo"> */
+/* <p class="bar"> */
+/* <p class="foo bar"> */
+/* e.g. ALL of the following will be selected: */
+/* <p class=""> */
+p:is(:not(.foo):not(.bar)) {
+  color: green;
+  border-top: dotted thin currentcolor;
+}
