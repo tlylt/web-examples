@@ -6,3 +6,5 @@
 - [cssnot](https://tlylt.github.io/web-examples/cssnot/index.html)
   - [cssnot2](https://tlylt.github.io/web-examples/cssnot2/index.html)
   - [cssnot3](https://tlylt.github.io/web-examples/cssnot3/index.html)
+  - [cssnot4](https://tlylt.github.io/web-examples/cssnot4/index.html)
+  - [cssnot5](https://tlylt.github.io/web-examples/cssnot5/index.html)
